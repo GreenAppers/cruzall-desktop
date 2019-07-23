@@ -157,7 +157,7 @@
 				33CC11202044C79F0003C045 /* PBXTargetDependency */,
 			);
 			name = Runner;
-			productName = "Cruzall";
+			productName = Cruzall;
 			productReference = 33CC10ED2044A3C60003C045 /* Cruzall.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -405,9 +405,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9S723G94YQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					$PROJECT_DIR/Flutter/ephemeral,
 					"$(inherited)",
