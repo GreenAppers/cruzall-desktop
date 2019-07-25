@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{5A827760-CF8B-408A-99A3-B6C0AD2271E7}</ProjectGuid>
-    <RootNamespace>GLFWExample</RootNamespace>
+    <RootNamespace>Cruzall</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -51,14 +51,14 @@
     <IntDir>$(ProjectDir)..\build\windows\intermediates\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <IncludePath>$(ProjectDir)flutter\;$(ProjectDir)flutter\cpp_client_wrapper\include\;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)flutter;$(LibraryPath)</LibraryPath>
-    <TargetName>Flutter Desktop Example</TargetName>
+    <TargetName>Cruzall</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(ProjectDir)..\build\windows\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
     <IntDir>$(ProjectDir)..\build\windows\intermediates\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <IncludePath>$(ProjectDir)flutter\;$(ProjectDir)flutter\cpp_client_wrapper\include\;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)flutter;$(LibraryPath)</LibraryPath>
-    <TargetName>Flutter Desktop Example</TargetName>
+    <TargetName>Cruzall</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -151,6 +151,12 @@
     <ClCompile Include="$(ProjectDir)flutter\cpp_client_wrapper\flutter_window_controller.cc" />
     <ClCompile Include="$(ProjectDir)flutter\cpp_client_wrapper\plugin_registrar.cc" />
     <ClCompile Include="flutter_embedder_example.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Runner.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
