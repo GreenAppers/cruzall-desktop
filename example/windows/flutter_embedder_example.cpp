@@ -46,7 +46,7 @@ std::string GetExecutableDirectory() {
 
 }  // namespace
 
-int main(int argc, char **argv) {
+int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nCmdShow) {
   // Resources are located relative to the executable.
   std::string base_directory = GetExecutableDirectory();
   if (base_directory.empty()) {
@@ -62,7 +62,7 @@ int main(int argc, char **argv) {
   flutter::FlutterWindowController flutter_controller(icu_data_path);
 
   // Start the engine.
-  if (!flutter_controller.CreateWindow(800, 600, "Flutter Desktop Example",
+  if (!flutter_controller.CreateWindow(720, 860, "Cruzall",
                                        assets_path, arguments)) {
     return EXIT_FAILURE;
   }
