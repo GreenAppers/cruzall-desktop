@@ -60,10 +60,14 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nC
   std::vector<std::string> arguments;
 
   flutter::FlutterWindowController flutter_controller(icu_data_path);
+  flutter::WindowProperties window_properties = {};
+  window_properties.title = "Cruzall";
+  window_properties.width = 720;
+  window_properties.height = 860;
 
   // Start the engine.
-  if (!flutter_controller.CreateWindow(720, 860, "Cruzall",
-                                       assets_path, arguments)) {
+  if (!flutter_controller.CreateWindow(window_properties, assets_path,
+                                       arguments)) {
     return EXIT_FAILURE;
   }
 
