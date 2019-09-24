@@ -14,3 +14,7 @@ rm -rf macos linux windows
 cp -R $1/example/macos .
 cp -R $1/example/linux .
 cp -R $1/example/windows .
+
+flutter config --enable-macos-desktop
+flutter config --enable-linux-desktop
+flutter config --enable-windows-desktop
